@@ -67,3 +67,16 @@ Download the `vit_base_patch16_224.dino` model using the timm library, and the s
 Then execute `sbatch run_train_dinosaur_abstractor_vprom_job.slurm` which trains the slot abstractor on the V-PROM neutral regime. 
 
 To evaluate on the test set, execute `sbatch run_test_dinosaur_abstractor_vprom_job.slurm`, which requires specifying the path to the saved model weights after training through `--model_checkpoint` argument on line 24.
+
+## Citation
+
+We thank you for showing interest in our work. If our work was beneficial for you, please consider citing us using:
+```
+@inproceedings{mondal2024slot,
+  title={Slot Abstractors: Toward Scalable Abstract Visual Reasoning},
+  author={Mondal, Shanka Subhra and Cohen, Jonathan D and Webb, Taylor W},
+  booktitle={Fourty-first International Conference on Machine Learning},
+year={2024}
+}
+
+

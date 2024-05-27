@@ -73,9 +73,9 @@ To evaluate on the test set, execute `sbatch run_test_dinosaur_abstractor_vprom_
 We thank you for showing interest in our work. If our work was beneficial for you, please consider citing us using:
 ```
 @inproceedings{mondal2024slot,
-  title={Slot Abstractors: Toward Scalable Abstract Visual Reasoning},
-  author={Mondal, Shanka Subhra and Cohen, Jonathan D and Webb, Taylor W},
-  booktitle={Fourty-first International Conference on Machine Learning},
+title={Slot Abstractors: Toward Scalable Abstract Visual Reasoning},
+author={Mondal, Shanka Subhra and Cohen, Jonathan D and Webb, Taylor W},
+booktitle={Fourty-first International Conference on Machine Learning},
 year={2024}
 }
 

@@ -62,7 +62,7 @@ First `cd v-prom`
 
 Create a directory `V-PROM` and download the dataset in it. Also, create a separate directory `weights` to save model weights from training.
 
-Download the `vit_base_patch16_224.dino` model using the timm library, and the slot attention model pre-trained on the V-PROM neutral regime from [here](https://drive.google.com/file/d/1JMJ-29TKygrNZYnqKna2DmaiOaY5iKvd/view?usp=drive_link. 
+Download the `vit_base_patch16_224.dino` model using the timm library, and the slot attention model pre-trained on the V-PROM neutral regime from [here](https://drive.google.com/file/d/1JMJ-29TKygrNZYnqKna2DmaiOaY5iKvd/view?usp=drive_link). 
 
 Then execute `sbatch run_train_dinosaur_abstractor_vprom_job.slurm` which trains the slot abstractor on the V-PROM neutral regime. 
 

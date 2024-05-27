@@ -1,4 +1,6 @@
-# This repository contains code for the paper titled "Slot Abstractors: Toward Scalable Abstract Visual Reasoning"
+
+# Slot Abstractors
+Official repository for the paper - "[Slot Abstractors: Toward Scalable Abstract Visual Reasoning](https://arxiv.org/pdf/2403.03458)" 
 
 ## Requirements 
 - python 3.9.7
@@ -9,6 +11,9 @@
 - PIL==8.4.0
 - numpy==1.23.1
 - einops==0.4.1
+- timm==0.9.5
+- opencv-python==4.7.0
+- json==2.0.9
 
 ### Note - For training/testing, jobs were run through the Slurm scheduler. 
 
@@ -51,3 +56,14 @@ Then execute `sbatch run_train_pgm_job.slurm` which trains the slot abstractor o
 To evaluate on the test set (default is extrapolation regime), execute `sbatch run_test_pgm_job.slurm`, which requires specifying the path to the saved model weights after training through `--model_checkpoint` argument on line 22.
 
 
+## V-PROM
+
+First `cd v-prom`
+
+Create a directory `V-PROM` and download the dataset in it. Also, create a separate directory `weights` to save model weights from training.
+
+Download the `vit_base_patch16_224.dino` model using the timm library, and the slot attention model pre-trained on the V-PROM neutral regime from [here](https://drive.google.com/file/d/1JMJ-29TKygrNZYnqKna2DmaiOaY5iKvd/view?usp=drive_link. 
+
+Then execute `sbatch run_train_dinosaur_abstractor_vprom_job.slurm` which trains the slot abstractor on the V-PROM neutral regime. 
+
+To evaluate on the test set, execute `sbatch run_test_dinosaur_abstractor_vprom_job.slurm`, which requires specifying the path to the saved model weights after training through `--model_checkpoint` argument on line 24.
